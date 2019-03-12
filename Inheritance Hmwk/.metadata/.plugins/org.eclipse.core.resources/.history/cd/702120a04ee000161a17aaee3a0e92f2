@@ -1,0 +1,23 @@
+package inheritance;
+
+public class IDCard extends Card {
+	private String idNum;
+	
+	public IDCard(String n, String id) {
+		super(n);
+		idNum = id;
+	}
+	
+	public String format() {
+		return super.format() + ", ID Number: " + idNum;
+	}
+	
+	public String toString()
+    {
+    	return super.toString() + "[ID=" + idNum + "]";
+    }
+	
+	public String getID() {
+		return idNum;
+	}
+}

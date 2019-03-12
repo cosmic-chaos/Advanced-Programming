@@ -1,0 +1,9 @@
+package inheritance;
+
+public class IDCard extends Card {
+	private long ID;
+	
+	IDCard() {
+		//Constructor
+	}
+}

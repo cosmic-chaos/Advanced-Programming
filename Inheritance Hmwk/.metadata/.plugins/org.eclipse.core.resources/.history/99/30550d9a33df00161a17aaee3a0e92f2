@@ -1,0 +1,35 @@
+package inheritance;
+import java.util.*;
+
+public class Billfold {
+	ArrayList<Card> cards = new ArrayList<Card>();
+	
+	public Billfold() {
+		this(2);
+	}
+	
+	public Billfold(int cardAmount) {
+		for (int i=0;i<cardAmount;i++) {
+			cards.add(null);
+		}
+	}
+	
+	void addCard(Card card) {
+		for (int i=0;i<cards.size();i++) {
+			if (cards.get(i) == null) {
+				cards.add(i, card);
+				break;
+			}
+		}
+	}
+
+	String formatCards() {
+		String card_str = "";
+		for (int i=0;i<cards.size();i++) {
+			if (cards.get(i) != null) {
+				card_str += cards.get(i).format();
+			}
+		}
+		return card_str;
+	}
+}

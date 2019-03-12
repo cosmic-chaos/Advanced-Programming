@@ -1,0 +1,34 @@
+package inheritance;
+
+/**
+ * Used to create an ID card with an owner and an ID number.
+ *
+ * @author  Katya Bezugla
+ */
+
+public class IDCard extends Card {
+	
+	/**
+	 * Represents the card's ID number.
+	 */
+	
+	private String idNum;
+	
+	public IDCard(String n, String id) {
+		super(n);
+		idNum = id;
+	}
+	
+	public String format() {
+		return super.format() + ", ID Number: " + idNum;
+	}
+	
+	public String toString()
+    {
+    	return super.toString() + "[ID=" + idNum + "]";
+    }
+	
+	public String getID() {
+		return idNum;
+	}
+}

@@ -1,0 +1,27 @@
+package inheritance;
+
+/**
+ * Used to create a calling card with an owner, a card number, and a PIN.
+ *
+ * @author Katya Bezugla
+ */
+
+public class CallingCard extends Card {
+	private String cardNum;
+	private String pin;
+	
+	public CallingCard(String n, String card, String pinNum) {
+		super(n);
+		cardNum = card;
+		pin = pinNum;
+	}
+	
+	public String format() {
+		return super.format() + ", Card Number: " + cardNum + ", PIN: " + pin;
+	}
+	
+	public String toString()
+    {
+    	return super.toString() + "[number=" + cardNum + ",pin=" + pin + "]";
+    }
+}

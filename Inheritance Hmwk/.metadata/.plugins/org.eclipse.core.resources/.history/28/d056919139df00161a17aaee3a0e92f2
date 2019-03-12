@@ -1,0 +1,18 @@
+package inheritance;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Billfold billfold = new Billfold();
+		Card card1 = new CallingCard("Bob","123","456");
+		Card card2 = new DriverLicense("Sue","2000","123456");
+		
+		billfold.addCard(card1);
+		billfold.addCard(card2);
+		
+		System.out.println(billfold.formatCards());
+		System.out.println("Amount of expired cards: " + billfold.getExpiredCardCount());
+
+	}
+
+}

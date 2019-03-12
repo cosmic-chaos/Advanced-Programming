@@ -1,0 +1,17 @@
+package inheritance;
+import java.util.*;
+
+public class Billfold {
+	ArrayList<Card> cards = new ArrayList<Card>();
+	
+	void addCard(Card card) {
+		if (card1 != null) {
+			card1 = card;
+		}
+		
+	}
+
+	String formatCards() {
+		
+	}
+}

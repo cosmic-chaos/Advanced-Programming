@@ -1,0 +1,10 @@
+package inheritance;
+
+public class DriverLicense extends IDCard{
+	private String expire;
+	
+	DriverLicense(String n, String expiration, String id) {
+		super(n, id);
+		expire = expiration;
+	}
+}

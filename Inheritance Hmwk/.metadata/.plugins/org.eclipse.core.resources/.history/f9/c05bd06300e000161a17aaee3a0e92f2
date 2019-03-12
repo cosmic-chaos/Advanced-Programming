@@ -1,0 +1,45 @@
+package inheritance;
+
+public class Card {
+
+	private String name; 
+
+    public Card() 
+    { 
+        this("john"); //calling the other constructor using 
+                      //  the keyword ‘this’ 
+    } 
+
+    public Card(String n) 
+    { 
+        name = n; 
+    } 
+
+    public String getName() 
+    { 
+        return name; 
+    } 
+
+    public boolean isExpired() 
+    { 
+        return false; 
+    } 
+
+    public String format() 
+    { 
+        return "Card holder: " + name; 
+    } 
+    
+    public String toString()
+    {
+    	return this.getClass().getSimpleName() + "[name=" + name + "]";
+    }
+    
+    public boolean equals(Card card1, Card card2) {
+    	if (card1.toString() == card2.toString()) {
+    		return true;
+    	} else {
+    		return false;
+    	}
+    }
+}

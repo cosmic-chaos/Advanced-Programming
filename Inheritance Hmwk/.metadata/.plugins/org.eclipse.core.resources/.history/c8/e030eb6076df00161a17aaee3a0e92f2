@@ -1,0 +1,29 @@
+package inheritance;
+
+public class CallingCard extends Card {
+	private String cardNum;
+	private String pin;
+	
+	CallingCard(String n, String card, String pinNum) {
+		super(n);
+		cardNum = card;
+		pin = pinNum;
+	}
+	
+	public String format() {
+		return super.format() + ", Card Number: " + cardNum + ", PIN: " + pin;
+	}
+	
+	public void toString()
+    {
+    	System.out.println("CallingCard[name=" + super.getName() + "] [number=" + cardNum + ",pin=" + pin + "]");
+    }
+	
+	public String getNumber() {
+		return cardNum;
+	}
+	
+	public String getPIN() {
+		return pin;
+	}
+}
